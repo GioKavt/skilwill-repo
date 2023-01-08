@@ -45,12 +45,22 @@ git branch
 // creating branch
 git branch branch-name
 
-// changing branch
+// changing branch or commit
 git checkout branch-name
+git checkout commit-hash
 
 // creating and changing branch at the same time
 git checkout -b branch name
 
-// history  - logs
-git log
+// commit history  - logs
+git logs
+
+// creating new commit which reverts specific commit without any loss
+git revert commit-hash
+
+// resets whole commit without creating new commit
+// choose previous commit after which you want to be reset
+git reset commit-hash
+
+
 
