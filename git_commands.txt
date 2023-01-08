@@ -1,2 +1,55 @@
-//push new branch
+cd
+cd desktop
+
+// ssh check
+ls -al ~/.ssh
+
+// ssh keygen
+ssh-keygen -C "e-mail"
+ssh-kegen -t ed25519 -C "e-mail"
+
+// copy text
+clip < ~/.ssh/id_rsa.pub
+clip < ~/.ssh/id_ed25519.pub
+
+
+// push new branch
 git push -u origin branch-one
+
+// download on local machine
+git clone "ssh"
+
+// check status of current folder
+git status
+
+// add files into staging area for next commit
+git add file.name / git add .
+
+// saving those files into repositoy history 
+// snapshoting - saving changes from staging area
+git commit -m "comment"
+
+// publishing files
+git push
+
+// downloading files
+git pull
+
+// user and email
+git config --global user.email "test@yahoo.com"
+git config --global user.name "giokavt"
+
+// showing branch list
+git branch
+
+// creating branch
+git branch branch-name
+
+// changing branch
+git checkout branch-name
+
+// creating and changing branch at the same time
+git checkout -b branch name
+
+// history  - logs
+git log
