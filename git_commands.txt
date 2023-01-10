@@ -14,7 +14,8 @@ clip < ~/.ssh/id_ed25519.pub
 
 
 // push new branch
-git push -u origin branch-one
+git push -u origin branch-name
+git push --set-upstream origin branch-name
 
 // download on local machine
 git clone "ssh"
@@ -25,8 +26,8 @@ git status
 // add files into staging area for next commit
 git add file.name / git add .
 
-// saving those files into repositoy history 
-// snapshoting - saving changes from staging area
+// saving those files into repository history 
+// snapshot's - saving changes from staging area
 git commit -m "comment"
 
 // publishing files
@@ -62,6 +63,11 @@ git revert commit-hash
 // choose previous commit after which you want to be reset
 git reset commit-hash
 
+// merging two branches - in case if there are any changes in logs
+git merge branch-name
+
+// merging specific branches
+git pull .
+
 // creating file
 touch file.name
-
