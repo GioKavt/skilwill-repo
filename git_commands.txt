@@ -62,5 +62,6 @@ git revert commit-hash
 // choose previous commit after which you want to be reset
 git reset commit-hash
 
-
+// creating file
+touch file.name
 
